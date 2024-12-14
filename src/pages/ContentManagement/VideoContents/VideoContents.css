@@ -1,0 +1,107 @@
+.vid-video-container {
+  margin-left: 200px;
+  padding: 20px;
+}
+
+.section {
+  display: flex;
+  justify-content: center; /* Center the title */
+  margin-bottom: 20px; /* Add space below the title */
+}
+
+.vid-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.vid-create-button {
+  top: 20px;
+  left: 400px;
+  position: relative;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.vid-create-button:hover {
+  background-color: #0056b3;
+}
+
+.vid-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+  z-index: 1000;
+}
+
+.vid-popup input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.vid-popup-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.vid-create-folder-btn,
+.vid-cancel-folder-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.vid-create-folder-btn:hover,
+.vid-cancel-folder-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Grid layout for folder alignment with 5 items per row */
+.vid-folder-container {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 5 folders per row */
+  gap: 20px; /* Space between each folder */
+}
+
+.vid-folder {
+  display: flex;
+  flex-direction: column; /* Align folder name below icon */
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.vid-folder-icon {
+  font-size: 60px;
+  margin-bottom: 10px; /* Space between icon and name */
+}
+
+.vid-folder-name {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}
